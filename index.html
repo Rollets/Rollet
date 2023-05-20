@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +8,38 @@
     <style>
         body{
             background-color: black;
-            background-attachment: fixed; color: white;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1em;
             color: white;
-            display: flex;
         }
         
         header{
             background-color: brown;
             padding: 10px;
             margin: 10px;
+        }
+
+        main{
+            background-color: brown;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .imagem{
+            background-color: #181A25;
+            margin: 0%;
+            width: 600px;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px white;
+            font-family: Open Sans,sans-serif;
+        }
+
+        article{
+            background-color: black;
+            padding: 5px;
         }
 
         nav{
@@ -33,51 +54,47 @@
             margin-right: 50px;
         }
 
-        main {
-    background-color: #181A25;
-    margin: 0%;
-    width: 600px;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px white;
-    font-family: Open Sans,sans-serif;
-}
+        nav > a:hover{
+            color: brown;
+        }
 
-h1{
-    color: brown;
-}
+        h1{
+            color: white;
+        }
 
-h2{
-    color: brown;
-}
-
-p{
+        p{
             font-weight: bolder;
-}
+        }
+        
+        button{
+            background-color: rgba(10, 211, 10, 0.582);
+            padding: 10px;
+            margin: 10px;
+        }
 
-#italic{
-    font-style: italic;
-}
-
-img{
-    margin-right: 50px;
-}
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html" target="_blank">Início</a>
+            <a href="Servicços.html" target="_blank">Serviços</a>
+            <a href="Termos.html" target="_blank">Termos</a>
+        </nav>
+    </header>
     <main>
-        <h1>Termos</h1>
-        <p>A comunidade é totalmente autonoma, não retendo para si investimentos externos vindo de outras emprezas.</p>
-        <p>Todo o lucro do site vem dos jogadores que frequentam e confiam em nossas atividades , além de doações para que venhamos a manter o site no ar e operacional.</p>
-        <h2>IMPORTANTE</h2>
-        <p>Ao fazer um investimento na comunidade você concorda com os termos que listaremos abaixo.</p>
-        <h2>------------------------------------------</h2>
-        <p>1. Ao adicionar seu dinheiro você somente poderá fazer a retirada dos fundos após o término da rodada semanal, isso significa que os valores depositados pelos usuários ficará em nossas mãos até que seja encerrada a semana supracitada.</p>
-        <p>2. Deixamos bem claro e sem qualquer sombra de dúvidas, que pode haver perdas. e em razão disso, ao fazer um depósito, você concorda que em caso de perdas não somos responsáveis pelo devolvimento total do valor depositado.</p>
-        <p>3. Gostamos de frisar que, nunca, jamais, deve-se colocar dinheiro que vai te fazer falta em jogos de azar.</p>
-        <p id="italic">Rollet$ todos os direitos reservados <img src="imagens/simbolo-de-copyright.png" alt="copyright"></p>
+        <section>
+            <article>
+                <h1>Invista agora!</h1>
+                <p>Esse site foi total e exclusivamente desenvolvido visando investimentos em diversas áreas, com seu início voltado para o cassino rollet. <br>Ao clicar em "Conhecer modulo de investimento", você verá como funciona os investimentos em nossa comunidade.</p>
+            </article>
+        </section>
+    </main>
+    <main class="imagem">
+        <img src="imagens/R (1).jpeg" alt="casino">
+        <div>
+            <a href="investir.html"><button>Investir agora!</button></a>
+        </div>
     </main>
 </body>
 </html>
